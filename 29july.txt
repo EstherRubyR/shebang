@@ -1,0 +1,32 @@
+   df -hT
+   uname -r
+   cat /etc/redhat-release 
+   rpm -ivh kernel-debug
+   cd
+   rpm -ivh kernel-debug
+   cd /run/media/root/RHEL-7.0\ Server.x86_64/Packages
+   vim /boot/grub2/grub.cfg 
+   rpm -ivh kernel-debug-3.10.0-123.el7.x86_64.rpm 
+   uname -r
+   cat /etc/redhat-release 
+   vim /etc/default/grub
+
+ lsmod
+ lsmod |more
+ modinfo bonding
+ cat /proc/modules 
+ modprobe -r bonding
+ lsmod    | more
+ modprobe bonding
+ lsmod |more
+ depmod -v
+
+ sysctl -a
+ sysctl -a | wc -l
+ sysctl -a |grep ipv4.forward
+ sysctl -w net.ipv4.icmp_echo_ignore_all=0  
+ sysctl -p
+ sysctl -w net.ipv4.icmp_echo_ignore_all=1
+ sysctl -p
+ sysctl -w net.ipv4.icmp_echo_ignore_all=0
+ sysctl -p
