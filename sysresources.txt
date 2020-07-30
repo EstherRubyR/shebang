@@ -1,0 +1,52 @@
+ ping 192.168.91.151
+ dstat -cdmn
+ dstat -gyprs
+ dstat -nrs
+ dstat -c
+ dstat -d
+ dstat -r
+ dstat -m
+ dstat -n
+ dstat -g
+ dstat -y
+ dstat -p
+ dstat -r
+ dstat -s
+ vmstat 
+ vmstat  3
+ vmstat  3 5
+ vmstat  -D
+ vmstat  -d
+ iostat
+ iostat 3
+ iostat  3 5
+ mpstat
+ mpstat 3
+ mpstat 3 2
+ pidstat
+ pidstat -p ALL
+ pidstat -C "sleep" 5
+ pidstat -C sshd
+ pidstat -p ALL
+ pidstat -p 4950 1
+ pgrep 
+ pgrep  sshd
+ pgrep  sshd -l
+ pgrep  sshd -l -c
+ pgrep -u root
+ pgrep -u root -l
+ pgrep -u root -l bash
+ pgrep -u root,ruby -l
+ pgrep -u ruby -l
+ pgrep -u root -l
+ nfsiostat
+ cifsiostat
+ ss -a
+ ss
+ ss -l
+ ss -t
+ ss -u
+ ss -lt
+ ss -ua
+ ss -lu
+ ss -p
