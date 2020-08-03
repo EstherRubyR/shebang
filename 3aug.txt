@@ -1,0 +1,207 @@
+ fdisk -l | more
+  277  fdisk -l | more
+  278  fdisk /dev/sdb
+  279  mkfs -t xfs          /dev/sdb1
+  280  mkdir storage
+  281  mouny /dev/sdb1 /storage
+  282  mount /dev/sdb1 /storage
+  283  ls
+  284  rmdir storage
+  285  ls
+  286  cd
+  287  mkdir storage
+  288  mount /dev/sdb1 /storage
+  289  ls
+  290  mkdir storage
+  291  ls
+  292  rm storage
+  293  rmdir storage
+  294  ls
+  295  mkdir /storage
+  296  ls
+  297  mount /dev/sdb1 /storage
+  298  cd /storage
+  299  cp /root/desktop/* .
+  300  cp /root/desktop/* .
+  301  cp /root/Desktop/* .
+  302  ls
+  303  cd ..
+  304  umount /storage/
+  305  ls
+  306  cd /storage
+  307  ls
+  308  df-hT
+  309  cd ..
+  310  df-hT
+  311  cd
+  312  df-hT
+  313  mount /dev/sdb1
+  314  cd storage
+  315  cd /storage
+  316  mount /dev/sdb1
+  317  vim /etc/fstab
+  318  mount /dev/sdb1
+  319  cd
+  320  fdisk /dev/sdc
+  321  cd DESKTOP
+  322  cd Desktop/
+  323  fdisk /dev/sdc
+  324  init 6
+  325  fdisk /dev/sdc
+  326  partprobe /dev/sdc
+  327  mkfs -t xfs /dev/sdc
+  328  mkfs -t xfs /dev/sdc1
+  329  cd /
+  330  mkfs -t xfs /dev/sdc2
+  331  mount /dev/sdc2 /storage
+  332  cd /storage
+  333  cp /root/Desktop/* .
+  334  ls
+  335  umount /storage
+  336  umount /storage
+  337  ls
+  338  umount /storage
+  339  umount /storage
+  340  ls
+  341  cd ..
+  342  umount /storage
+  343  ls
+  344  cd    /storage/
+  345  ls
+  346  df -hT
+  347  mount /dev/sdc2 /storage
+  348  vim /etc/fstab 
+  349  df -hT
+  350  cd ..
+  351  mkfs -t xfs /dev/sdb1
+  352  vim /etc/fstab 
+  353  mkfs -t xfs /dev/sdb1
+  354  mkfs -tf xfs /dev/sdb1
+  355  df -hT
+  356  fdisk /dev/sdb
+  357  partprobe /dev/sdb
+  358  mkfs -t xfs /dev/sdb1
+  359  mkfs -ft xfs /dev/sdb1
+  360  fdisk /dev/sdb
+  361  partprobe /dev/sdb
+  362  mkfs -t xfs/dev/sdb1
+  363  mkfs -t xfs /dev/sdb1
+  364  init 6
+  365  df -hT
+  366  vim /etc/fstab 
+  367  df -hT
+  368  vim /etc/fstab 
+  369  vim /etc/fstab 
+  370  init 6
+  371  fdisk -k |more
+  372  fdisk -l |more
+  373  cd /
+  374  mkfs -t xfs /dev/sdb1
+  375  mkfs -f xfs /dev/sdb1
+  376  mkfs -f -t xfs /dev/sdb1
+  377  fdisk /dev/sdb2
+  378  fdisk /dev/sdb
+  379  fdisk -d /dev/sdb
+  380  fdisk remove /dev/sdb
+  381  fdisk /dev/sdb
+  382  partprobe /dev/ssssdb
+  383  partprobe /dev/sdb
+  384  vim /etc/fstab
+  385  mkfs -t xfs      /dev/sdb1
+  386  df -hT
+  387  init 6
+  388  cd
+  389  cccccccccccccd /
+  390  cd /
+  391  cd storage
+  392  ls
+  393  umount /storage/
+  394  cd ..
+  395  umount /storage/
+  396  mount /dev/sdb1 /storage
+  397  cd storage
+  398  ls
+  399  vim /etc/fstab
+  400  df -hT
+  401  free -m
+  402  fdisk /dev/sdb
+  403  partprobe /dev/sdb
+  404  mkswap /dev/sdb5
+  405  swapon    /dev/sdb5
+  406  free -m
+  407  swapoff /dev/sdb5
+  408  free -m
+  409  cd 
+  410  df -hT
+  411  fdik /dev/sdb
+  412  fdsik /dev/sdb
+  413  fdisk /dev/sdb
+  414  partprobe /dev/sdb
+  415  mkswap /dev/sdb6
+  416  swapon /dev/sdb6 
+  417  free -m
+  418  vim /etc/fstab
+  419  free -m
+  420  fdisk /dev/sdc
+  421  partprobe /dev/sdc
+  422  mkfs -t xfs /dev/sdc5
+  423  cd /
+  424  mkdir /common
+  425  ls
+  426  mount /dev/sdc5 /storage
+  427  umount /dev/sdc5 /storage
+  428  mount /dev/sdc5 /common
+  429  cd /common
+  430  cp /root/Desktop/* .
+  431  ls
+  432  df -hT
+  433  vim /etc/fstab 
+  434  init 6
+  435  vim /etc/fstab 
+  436  df -hT
+  437  free -m
+  438  vim /etc/fstab 
+  439  cd
+  440  cd /
+  441  mount /edv/sdb1 /storage
+  442  mount /dev/sdb1 /storage
+  443  cd /storage
+  444  ls
+  445  df -hT
+  446  cd //
+  447  cd ..
+  448  cd /
+  449  umount /storage
+  450  ls
+  451  mkfs -t xfs /dev/sdb1
+  452  mount /dev/sdb1 /storage
+  453  cd /storage
+  454  ls
+  455  cd ..
+  456  vim /etc/fstab
+  457  df -hT
+  458  reboo
+  459  reboot
+  460  df -hT
+  461  vim /etc/fstab
+  462  df -hT
+  463  df -hT
+  464  fdisk /dev/sdb2
+  465  rebbbbbbbbbboot
+  466  reboooooooooooot
+  467  reboot
+  468  reboot
+  469  systemctl default
+  470  vim /etc/fstab
+  471  systemctl reboot
+  472  systemctl  default
+  473  vim /etc/ffffffffstab
+  474  :q
+  475  vim /etc/fstab
+  476  systemctl reboot
+  477  df -hT
+  478  fdisk -----/dev/sdb2
+  479  fdisk -/dev/sdb2
+  480  fdisk /dev/sdb2
+  481  fdisk /dev/sdb
+  482  fdisk -l |more
