@@ -1,0 +1,39 @@
+  cat /etc/group | more
+  groupadd cgi
+  passwd -a ruby cgi
+  cat /etc/group |more
+  id ruby
+  gpasswd -d ruby cgi
+  gpasswd -a ruby cgi
+  gpasswd -d ruby cgi
+  cat /etc/group |more
+  id ruby
+  gpasswd -M user1,user2,user3 cgi
+  useradd -g cgi user1
+  useradd -g cgi user2
+  useradd -G cgi user4
+  id user4
+  id user2
+  groupadd blr
+  groupdel blr
+  groupdel cgi
+  groupadd admin
+  useradd -G admin natasha
+  useradd -G admin harry
+  useradd -s /sbin/nologin sarah
+  echo "wakenym" | passwd natasha --stdin
+  echo "wakenym" | passwd harry --stdin
+  echo "wakenym" | passwd sarah --stdin
+ fdisk -l | more
+  fdisk /dev/sdc
+  partprobe /dev/sdc
+  mkfs -t xfs /dev/sdc1
+  mkdir /mnt/backup
+  mount /dev/sdc1 /mnt/backup
+  cd /mnt/backup
+  cp /root/Desktop/* .
+  ls
+  cd ..
+  vim /etc/fstab
+  df -hT
+  vim /etc/fsta
