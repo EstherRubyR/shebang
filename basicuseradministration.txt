@@ -1,0 +1,38 @@
+  cat /etc/passwd | more
+  useradd therby
+  cat /etc/shadow |more
+  useradd user1
+  passwd user1
+  cat /etc/passwd
+  useradd -u 1200 -d /home/user02 -c admin -s /bin/csh /user2
+  useradd -u 1200 -d /home/user02 -c admin -s /bin/csh user2
+  cd /home
+  vim user1
+  vim user02
+  cat /etc/passwd |more
+  passwd user2
+  useradd user3
+  cat /etc/passwd |more
+  usermod -c trainee user1
+  cat /etc/passwd |more
+  usermod -g 1200 user1
+  cat /etc/passwd |more
+  usermod -s /sbin/nologin user1
+  su -user1
+  su - u ser1
+  su - user1
+  usermod -s /bin/bash user1
+  su - user1
+  userdel user1
+  userdel -r user2
+  ls
+  cat /etc/passwd |more
+  cd /var/spool/mail
+  ls
+  cd
+  cd /home
+  chage -l therby
+  chage -m 5 -M 10 -W 2 -I 5 -E 12/31/2020 therby
+  chage -l therby
+  
+
