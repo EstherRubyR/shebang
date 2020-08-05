@@ -1,0 +1,24 @@
+mkdir linux
+ ls -ld linux
+ cd linux
+ touch f1 f2 f3 f4
+ ls -l
+ cd ..
+ chgrp therby linux
+ ls -ld linux/
+ cd linux/
+ touch a1 a2 a3 a4
+ ls -l
+ cd ..
+ chgrp -R therby linux
+ ls -ld linux/
+ cd linux/
+ ls -l
+ touch 1
+ ls -l 1
+ chmod 2755 linux
+ cd ..
+ chmod 2755 linux
+ cd linux/
+ touch 123 111
+ ls -l
