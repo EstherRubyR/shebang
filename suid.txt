@@ -1,0 +1,12 @@
+ cat /etc/shadow
+ ls -l   /etc/shadow
+  whereis  cat
+ ls -l /bin/cat
+ chmod 4755 /bin/cat
+ ls -l /bin/cat
+ chmod 755 /bin/cat
+ ls -l /bin/cat
+ ls -l /bin/passwd
+ ls -l /bin/su
+ ls -l /bin/ping
+ 
