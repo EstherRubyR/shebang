@@ -1,0 +1,17 @@
+ls
+touch file4
+ls
+getfacl file4
+setfacl -m u:ruby:rw- file4
+getfacl file4
+setfacl -m u:therby:rwx file4
+getfacl file4
+setfacl -x u:therby file4
+getfacl file4
+setfacl -x u:ruby file4
+getfacl file4
+setfacl -m g:priorg:rwx file4
+getfacl file4
+setfacl -x g:priorg file4
+getfacl file4
+  
