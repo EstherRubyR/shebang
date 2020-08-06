@@ -1,0 +1,33 @@
+fdisk -l |more
+fdisk /dev/sdb
+fdisk /dev/sdc
+partprobe /dev/sdc
+pvcreate /dev/sdc2 /dev/sdc3
+pvdisplay
+vgdisplay
+pvdisplay | more
+pvdisplay
+ lvcreate -n lv1 -L 400M vg1
+lvcreate -n lv2 -l 40 vg1
+lvdisplay
+lvdisplay |more
+vgs
+pvs
+mkfs -t xfs /dev/vg1/lv1
+mkdir /lvstore
+mount /dev/vg1/lv1 /lvstore
+df -hT
+cp /root/Desktop/* /lvstore/
+df -hT
+vim /etc/fstab
+df -hT
+init 6
+ mkfs -t xfs /dev/vg1/lv2
+mkdir /lv2store
+mount /dev/vg1/lv2 /lv2store
+df -hT
+cp /root/Desktop/* /lv2store
+df -hT
+vim /etc/fstab 
+
+
