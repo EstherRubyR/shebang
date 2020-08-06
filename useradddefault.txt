@@ -1,0 +1,16 @@
+ vim /etc/login.defs 
+ yum install ksh.x86_64 -y
+vim /etc/default/useradd
+whereis ksh
+vim /etc/default/useradd
+useradd t1
+cd /etc/skel/
+ls -la
+vim /etc/default/useradd
+ vim /etc/default/useradd
+vim /etc/default/useradd
+ su - t1
+pwd
+ls -a 
+cd /etc/skel/
+echo $0
