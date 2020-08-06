@@ -1,0 +1,38 @@
+ visudo -f /etc/sudoers
+passwd natasha
+cat > post
+rm post
+cd /
+ cat > post
+ls
+ groupmems -g wheel -l
+visudo -f /etc/sudoers
+ gpasswd -a  ruby wheel
+groupmems -g wheel -l
+visudo -f /etc/sudoers
+ visudo -f /etc/sudoers
+ gpasswd -d  ruby wheel
+gpasswd -a  therby wheel
+ passwd therby
+ rm dir1
+hown ruby dir1
+rm dir1
+pwd
+ cd
+cd /
+ls
+cat dir1
+ls -l dir1
+exit
+cat dir1
+cd /
+ls
+cat dir1
+rm dir1
+rm post
+ ls -l dir1
+sudo /usr/sbin/usermod -c trainee  orguser01
+sudo /usr/sbin/usermod -c trainee orguser01
+sudo /usr/sbin/usermod -c trainee harry
+cat /etc/passwd
+
