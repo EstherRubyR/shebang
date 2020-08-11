@@ -1,0 +1,117 @@
+lvs
+lvextend -L +300M /dev/vg1/lv1
+xfs_growfs /dev/vg1/lv1
+lvdisplay /dev/vg1/lv1
+  466  cd /run/media/root/RHEL-7.0\ Server.x86_64/Packages
+  467  ls
+  468  cd /var/ftp/pub/
+  469  ls
+  470  rm -rf Packages
+  471  ls
+  472  cd /var/ftp/pub/
+  473  ls
+  474  cd /var/ftp/pub
+  475  mkdir Packages
+  476  ls
+  477  rm -rf Packages/
+  478  cd /var/ftp/pub/
+  479  mkdir Packages
+  480  cp -v /run/media/root/RHEL-7.0\ Server.x86_64/* ./Packages/
+  481  ls
+  482  cd /Packages
+  483  ls
+  484  cp -v /run/media/root/RHEL-7.0\ Server.x86_64/* /var/ftp/pub/Packages/
+  485  createrepo /var/ftp/pub/Packages/
+  486  systemctl restart vsftpd.service 
+  487  systemctl status vsftpd.service
+  488  cd /etc/yum.repos.d/
+  489  mv * /tmp/
+  490  vim server1.repo
+  491  ifconfig
+  492  cd /etc/yum/repos.d
+  493  cd /var/ftp/pub/Packages/
+  494  cd /etc/yum/repos.d
+  495  cd /etc/yum.repos.d/
+  496  yum repolist
+  497  fdisk -l |more
+  498  fdisk -l | grep /dev/sde
+  499  fdisk -l | grep /dev/sdd
+  500  fdisk -l | grep /dev/sdf
+  501  fdisk -l | grep /dev/sdg
+  502  fdisk -l | grep /dev/sdg
+  503  fdisk -l |more
+  504  fdisk -l | grep /dev/sdg
+  505  fdisk -l | more
+  506  fdisk -l | more
+  507  fdisk -l | grep /dev/sdc
+  508  fdisk -l | grep /dev/sdc
+  509  fdisk -l | grep /dev/sde
+  510  fdisk -l | grep /dev/sdf
+  511  fdisk /dev/sdd
+  512  fdisk -l |more
+  513  fdisk -l | grep /dev/sdc
+  514  fdisk -l | grep /dev/sde
+  515  fdisk -l | grep /dev/sdf
+  516  fdisk /dev/sdc
+  517  partprobe /dev/sdc
+  518  fdisk /dev/sde
+  519  fdisk /dev/sde
+  520  partprobe /dev/sde
+  521  mkfs -t xfs /dev/sde1
+  522  df -h
+  523  fdisk -l |more
+  524  mkdir /sde1data
+  525  mount /dev/sde1 /sde1data/
+  526  vim /etc/fstab
+  527  df -hT
+  528  df -h
+  529  pvcreate /dev/sdc1
+  530  pvcreate /dev/sdf
+  531  vgcreate VGRLL /dev/sdc1 /dev/sdf
+  532  vgdisplay  VGRLL 
+  533  lvcreate -n LVsmall -L 200M VGRLL
+  534  lvcreate -n LBbig -L 600M VGRLL
+  535  mkfs -t xfs /dev/VGRLL/LVsmall
+  536  mkdir /lvsmall
+  537  mount /dev/VGRLL/LVsmall /lvsmall/
+  538  mkfs -t xfs /dev/VGRLL/LBbig
+  539  mkdir /lbbig
+  540  mount /dev/VGRLL/LBbig /lbbig/
+  541  df -h
+  542  m /etc/fstab
+  543  vim /etc/fstab 
+  544  lvextend -L +100M /dev/VGRLL/LVsmall
+  545  xfs-growfs /dev/VGRLL/LVsmall
+  546  xfs_growfs /dev/VGRLL/LVsmall
+  547  df -h
+  548  vim /etc/fstab
+  549  vgdisplay
+  550  vgdisplay | grep VGRLL
+  551  vgdisplay | more
+  552  vgdisplay | more
+  553  fdisk -l | grep /dev/sdc
+  554  fdisk -l | grep /dev/sde
+  555  fdisk -l | grep /dev/sdf
+  556  df -hhhh
+  557  fdisk -l | grep /dev/sdc
+  558  fdisk -l | grep /dev/sde
+  559  fdisk -l | grep /devf
+  560  fdisk -l | grep /dev/sdf
+  561  vgs
+  562  df -h
+  563  fdisk -l |more
+  564  df -h
+  565  free
+  566  free | /dev/sdc
+  567  fdisk -l |more
+  568  vgdisplay
+  569  vgdisplay | more
+  570  pvdisplay
+  571  pvdisplay |more
+  572  df -h
+  573  fdsik -l | grep sdc
+  574  df -h
+  575  fdisk -l | grep /dev/sdc
+  576  fdisk /dev/sdc
+  577  df -h
+  578  fdisk -l |more
