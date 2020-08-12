@@ -1,0 +1,44 @@
+ vi groupmem.sh
+ls
+ls -Z file4
+touch /tmp/f3
+ls -Z /tmp/f3
+cd /var/ftp/pub
+ls -Z /var/ftp/pub/
+ls -Zd /var/ftp/pub/
+chcon -Rt nfs_t file4
+cd
+chcon -Rt nfs_t file4
+ls -Z file4
+restorecon  -R file4
+ls -Z file4
+semanage login -l
+getenforce
+setenforce 0
+getenforce
+setenforce 1
+getenforce
+vim /etc/sysconfig/selinux 
+getenforce
+reboot
+getenforce
+vim /etc/sysconfig/selinux 
+reboot
+ls
+ pwd
+cd ..
+ls
+pwd
+sestatus 
+ls
+pwd
+cd
+getsebool -a
+getsebool -a | grep nfs
+setsebool nfs_export_all_ro=0
+getsebool -a | grep nfs
+setsebool nfs_export_all_ro=1
+getsebool -a | grep nfs
+setsebool -P nfs_export_all_ro=1
+getsebool -a | grep nfs
+
