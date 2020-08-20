@@ -1,0 +1,126 @@
+  417  ifconfig |more
+systemctl restart network
+ifconfig |more
+ vim /etc/samba/smb.conf
+smbpasswd -a natasha
+ systemctl restart smb
+iptables -F 
+systemctl restart smb
+cat           /etc/passwd | more
+cat           /etc/passwd | more
+getsebool -a | grep samba
+getenforce 
+systemctl restart smb
+cd
+ iptables -L
+iptables -L |more
+ iptables -F
+iptables -t filter -I INPUT -s 192.168.91.158 -p tcp --dport 22 -j REJECT 
+iptables -F
+iptables -t filter -I INPUT -s 192.168.91.158 -p icmp --dport 22 -j REJECT 
+iptables -t filter -I INPUT -s 192.168.91.158 -p icmp -j REJECT 
+iptables -t filter -I INPUT -s 192.168.91.158 -p icmp -j DROP 
+iptables -L
+firewall-cmd --get-active-zones 
+ firewall-cmd --permanent --add-rich-rule 'rulefamily=ipv4 sourceaddress=192.168.91.158 forward-port port=443 protocol=tcp to port=22'
+firewall-cmd --permanent --add-rich-rule 'rule family=ipv4 sourceaddress=192.168.91.158 forward-port port=443 protocol=tcp to port=22'
+firewall-cmd --permanent --add-rich-rule 'rule family=ipv4 source address=192.168.91.158 forward-port port=443 protocol=tcp to port=22'
+firewall-cmd --permanent --add-rich-rule 'rule family=ipv4 source address=192.168.91.158 forward-port port=443 protocol=tcp port=22'
+firewall-cmd --permanent --add-rich-rule 'rule family=ipv4 source address=192.168.91.158 forward-port port=443 protocol=tcp to-port=22'
+firewall-cmd --reload 
+firewall-cmd --get-active-zones 
+firewall-cmd --permanent --remove-rich-rule 'rule family=ipv4 source address=192.168.91.158 forward-port port=443 protocol=tcp to-port=22'
+firewall-cmd --reload c
+firewall-cmd --get-active-zones
+firewall-cmd --reload 
+firewall-cmd --permanent --remove-rich-rule 'rule family=ipv4 source address=192.168.91.157 forward-port port=443 protocol=tcp to-port=22
+firewall-cmd --permanent --add-rich-rule 'rule family=ipv4 source address=192.168.91.157 forward-port port=443 protocol=tcp to-port=22
+firewall-cmd --permanent --add-rich-rule 'rule family=ipv4 source address=192.168.91.157 forward-port port=443 protocol=tcp to-port=22
+ vim /etc/ssh/sshd_config 
+systemctl restart sshd
+cd /
+  mkdir /smbshare
+groupadd marketing
+ls -l | grep smbshare
+ chgrp marketing /smbshare/
+ls -l | grep smbshare
+chmod g+s /smbshare/
+ ls -l | grep smbshare
+chcon -t samba_share_t /smbshare/
+ls -l | grep smbshare
+ls -Zl | grep smbshare
+semanage fcontext -a -t samba_share_t '/smbshare(/.*)?'
+ useradd -G marketing brian
+id brian
+getfacl /smbshare/
+setfacl -m u:brian:rw- /smbshare/
+getfacl /smbshare/
+useradd rob
+setfacl -m u:rob:r-- /smbshare/
+ getfacl /smbshare/
+hostname
+ yum install postfix -y
+ vim /etc/postfix/main.cf 
+systemctl restart postfix
+systemctl status postfix
+systemctl start postfix
+systemctl enable postfix
+systemctl status postfix
+systemctl restart postfix
+ mail ruby@server.example.com
+ vim /etc/postfix/main.cf 
+ hostname 
+reboot
+ ifconfig | more
+su - ruby
+su - natasha
+yum install mdadm -y
+fdisk -l |more
+mdadm -E /dev/sdd /dev/sde
+mdadm -E /dev/sdc /dev/sde
+ fdisk /dev/sdc
+fdisk /dev/sde
+partprobe /dev/sdc
+partprobe /dev/sde
+mdadm -E /dev/sde /dev/sdc
+mdadm -E /dev/sdc1 /dev/sde1
+mdadm --create /dev/md0 --level=mirror --raid-devices=2 /dev/sdc1 /dev/sde1
+mdadm -E /dev/sdc1 /dev/sde1
+ mdadm --detail /dev/md0
+mkfs -t xfs /dev/md0
+mkdir /mnt/data
+mount /dev/mdo /mnt/data
+mount /dev/md0 /mnt/data
+cd /mnt/data/
+ls
+touch cgi1.txt
+cat > cgi1.txt
+ls
+df -hT
+vim /etc/mdadm.conf
+mdadm --detail --scan --verbose >> /etc/mdadm.conf
+vim /etc/mdadm.conf
+mdadm --detail /dev/md0
+cd
+init 6
+df -hT
+mount -t xfs /dev/md0 /mnt/data
+df -hT
+cd /mnt/data/
+ls
+cst cgi1.txt
+cat cgi1.txt
+ yum install chrony -y
+vim /etc/chrony.conf
+systemctl restart chronyd.service 
+ firewall-cmd -add-service=ntp --permanent 
+firewall-cmd --add-service=ntp --permanent 
+firewall-cmd --reload
+chronyc sources
+yum install ntpdate -y
+ntpdate 192.168.91.157
+timedatectl 
+vim /etc/chrony.conf
+systemctl restart chronyd.service 
+ntpdate 192.168.91.157
+
