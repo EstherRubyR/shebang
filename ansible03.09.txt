@@ -1,0 +1,146 @@
+   
+ 1  nmtui
+    2  systemctl restart network
+    3  ifconfig | more
+    4  hostnamectl  set-hostname master.example.com
+    5  bash
+    6  hostname
+    7  nmtui
+    8  systemctl restart network
+    9  ifconfig | more
+   10  vim /etc/hosts
+   11  useradd ansible
+   12  passwd ansible 
+   13  echo "ansible ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/ansible
+   14  chmod 0400      /etc/sudoers.d/ansible 
+   15  vim /etc/sudoers.d/ansible 
+   16  su - ansible
+   17  ssh ansible@node1.example.com
+   18  su - ansible 
+   19  wget
+   20  wget      http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   21  ifconfig | more
+   22  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-latest-7.noarch.rpm
+   23  systemctl status network
+ 
+   
+   
+   30  ping 192.168.91.129
+   31  ping 192.168.91.128
+   32  ping 192.168.91.130
+   33  ping 192.168.91.131
+   34  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-latest-7.noarch.rpm
+   35  systemctl restart network
+   36  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-latest-7.noarch.rpm
+   37  systemctl restart network
+   38  wget http://dl.fedoraproject.org/pub/epel/ep-latest-7.noarch.rpm
+   39  wget http://dl.fedoraproject.org/pub/epel/e-7.noarch.rpm
+   40  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   41  ping www.google.com
+   42  ifconfig |morre
+   43  ifconfig |more
+   44  systemctl restart network
+   45  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   46  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-6-8.noarch.rpm
+   47  ping www.google.com
+   48  wget http://dl.fedoraproject.org/pub/epel/epel-release
+   49  iptables -F
+   50  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   51  firefox
+   52  systemctl restart NetworkManager
+   53  ifconfig
+   54  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   55  reboot
+   56  yum install elinks -y
+   57  elinks node1.example.com
+   58  elinks node2.example.com
+   59  elinks node3.example.com
+   60  vim /etc/hosts
+   61  elinks node3.example.com
+   62  iptables -F
+   63  elinks node3.example.com
+   64  exit
+   65  elinks node3.example.com
+   66  elinks node2.example.com
+   67  elinks node1.example.com
+
+
+    1  ssh-keygen 
+    2  ssh-cop-id -i /home/ansible/.ssh/id_rsa.pub ansible@node1.example.com
+    3  p-id -i /home/ansible/.ssh/id_rsa.pub ansible@node1.example.com
+    4  ssh-cp-id -i /home/ansible/.ssh/id_rsa.pub ansible@node1.example.com
+    5  ssh-copy-id -i /home/ansible/.ssh/id_rsa.pub ansible@node1.example.com
+    6  ssh-copy-id -i /home/ansible/.ssh/id_rsa.pub ansible@node2.example.com
+    7  ssh-copy-id -i /home/ansible/.ssh/id_rsa.pub ansible@node3.example.com
+    8  exit
+    9  ssh ansible@node1.exampl.com
+   10  ssh ansible@node1.example.com
+   11  ssh ansible@node2.example.com
+   12  ssh ansible@node3.example.com
+   13  exit
+   14  wget http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   15  exit
+   16  ansible --version
+   17  touch ansible.cfg
+   18  ansible --version
+   19  vim ansible.cfg 
+   20  vim inventory
+   21  ansible all -m ping
+   22  ansible host-pattern -m module -a 'module argument' -i inventory
+   23  ansible -m user -a 'name=ruby uid=1000 state=present' node1.example.com
+   24  ansible -m user -a 'name=Ruby uid=1000 state=present' node1.example.com
+   25  ansible -m user -a 'name=Ruby uid=1000 state=present'
+   26  ansible al -m user -a 'name=Ruby uid=1000 state=present'
+   27  ansible all -m user -a 'name=Ruby uid=1000 state=present'
+   28  exit
+   29  ansible all -m user -a 'name=Ruby uid=1000 state
+   30  ansible all -m user -a 'name=Ruby uid=1000 state=present' node1.example.com
+   31  ansible all -m user -a 'name=user1 uid=1000 state=present' node1.example.com
+   32  ansible all -m user -a 'name=user1 uid=1000 state=present' node2.example.com
+   33  ansible  -m user -a 'name=user1 uid=1000 state=present' node2.example.com
+   34  exit
+   35  vim firstplay.yml
+   36  vim inventory
+   37  ansible-playbook firstplay.yml --syntax-check
+   38  ansible-playbook firstplay.yml -c
+   39  ansible-playbook firstplay.yml -C
+   40  ansible-playbook firstplay.yml -v
+   41  ansible-playbook firstplay.yml -vv
+   42  su - root
+   43  history
+   44  ansible-playbook firstplay.yml 
+   45  vim firstplay.yml 
+   46  ansible-playbook firstplay.yml --syntax-check
+   47  ansible-playbook firstplay.yml 
+   48  ansible-playbook firstplay.yml -v
+   49  vim firstplay.yml 
+   50  ansible-playbook firstplay.yml --syntax-check
+   51  ansible-playbook firstplay.yml -v
+   52  vim firstplay.yml 
+   53  ansible-playbook firstplay.yml --syntax-check
+   54  ansible-playbook firstplay.yml -v
+   55  ansible-playbook firstplay.yml 
+   56  vim inventory 
+   57  ansible-playbook firstplay.yml 
+   58  ansible-playbook firstplay.yml -v
+   59  ansible-playbook firstplay.yml 
+   60  ssh ansible@node3.example.com
+   61  ansible-playbook firstplay.yml 
+   62  ssh-copy-id -i /home/ansible/.ssh/id_rsa.pub ansible@node3.example.com
+   63  ssh ansible@node3.example.com
+   64  ansible-playbook firstplay.yml 
+   65  ansible-playbook firstplay.yml -v
+   66  vim ~/.vimrc
+   67  vim firstplay.yml 
+   68  vim secondplay.yml
+    vim firstplay.yml 
+vim secondplay.yml
+ansible-playbook secondplay.yml ---syntax-check
+ansible-playbook secondplay.yml --syntax-check
+vim secondplay.yml 
+ansible-playbook secondplay.yml --syntax-check
+ansible-playbook secondplay.yml -v
+curl node1.example.com
+elinks node1.example.com
+
+   
